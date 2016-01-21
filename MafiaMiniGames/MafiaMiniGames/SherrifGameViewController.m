@@ -9,6 +9,11 @@
 #import "SherrifGameViewController.h"
 
 @interface SherrifGameViewController ()
+@property (weak, nonatomic) IBOutlet PlayerView *pv1;
+@property (weak, nonatomic) IBOutlet PlayerView *pv2;
+@property (weak, nonatomic) IBOutlet PlayerView *pv3;
+@property (weak, nonatomic) IBOutlet PlayerView *pv4;
+
 
 @end
 
@@ -16,8 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PlayerView *pv1 = [[PlayerView alloc] init];
-    [self.view addSubview:pv1];
+    self.pv1.character = self.gameController.character1;
+    self.pv2.character = self.gameController.character2;
+    self.pv3.character = self.gameController.character3;
+    self.pv4.character = self.gameController.character4;
     
 }
 

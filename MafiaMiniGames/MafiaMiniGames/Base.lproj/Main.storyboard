@@ -29,7 +29,7 @@
                                         </constraints>
                                         <state key="normal" title="Sherrif"/>
                                         <connections>
-                                            <segue destination="Xdp-qZ-6Tt" kind="show" id="p6k-av-oZH"/>
+                                            <segue destination="Xdp-qZ-6Tt" kind="show" identifier="sherrifSelect" id="p6k-av-oZH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,6 +136,12 @@
                             <constraint firstItem="KxP-hH-SgQ" firstAttribute="width" secondItem="La8-A0-KlT" secondAttribute="width" id="vka-En-cqI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pv1" destination="KxP-hH-SgQ" id="wLX-77-ike"/>
+                        <outlet property="pv2" destination="La8-A0-KlT" id="jYz-xK-LkG"/>
+                        <outlet property="pv3" destination="hDv-XH-Sxr" id="416-nq-MtO"/>
+                        <outlet property="pv4" destination="pAH-ve-yoo" id="KGY-xU-ndq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0U-ov-nAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,6 +249,10 @@
         <scene sceneID="rrx-uD-r0C">
             <objects>
                 <viewController id="BAa-QF-szW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nJU-cl-gE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="YY0-yj-gMQ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oJi-1m-rGC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

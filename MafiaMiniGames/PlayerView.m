@@ -17,12 +17,12 @@
 
 - (void) drawRect:(CGRect)rect{
     
-    UILabel *characterName = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 100, 10)];
+    UILabel *characterName = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 100, 20)];
     characterName.text = self.character.name;
     [self addSubview:characterName];
     
     
-    UILabel *characterStatus = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 100, 10)];
+    UILabel *characterStatus = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 100, 20)];
     if (self.character.isMafia) {
         characterStatus.text = @"Mafia";
     } else if (self.character.isDead){
@@ -32,7 +32,7 @@
     }
     [self addSubview:characterStatus];
     
-    UIButton *killButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 60, 100, 10)];
+    UIButton *killButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 90, 100, 20)];
     [killButton addTarget:self.character action:@selector(kill) forControlEvents:UIControlEventTouchUpInside];
     if (self.character.isDead || self.character.isMafia) {
         [killButton setEnabled:NO];

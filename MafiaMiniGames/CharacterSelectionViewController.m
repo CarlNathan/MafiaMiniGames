@@ -34,7 +34,7 @@
         MafiaGameViewController *mvgc = segue.destinationViewController;
         mvgc.gameController = self.gameController;
         
-    } else if ([segue.identifier isEqualToString:@"MafiaSelect"]){
+    } else if ([segue.identifier isEqualToString:@"sherrifSelect"]){
         SherrifGameViewController *svgc = segue.destinationViewController;
         svgc.gameController = self.gameController;
     }
